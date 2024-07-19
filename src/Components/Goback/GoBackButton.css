@@ -1,0 +1,12 @@
+.goback {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  background: none;
+  color: black;
+  opacity: 50%;
+  margin-top: 80px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}

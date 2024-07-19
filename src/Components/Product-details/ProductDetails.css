@@ -1,0 +1,318 @@
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 110px;
+  margin-top: 70px;
+}
+
+.details-image {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.details-p {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.price-span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 17.76px;
+  color: #000000;
+}
+
+.add-to-cart {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 48px;
+}
+
+.counter {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f1f1f1;
+}
+
+.plus-minus {
+  background-color: none;
+  border: none;
+  padding: 16px 20px;
+  cursor: pointer;
+}
+
+.plus-minus:hover {
+  color: #D87D4A
+}
+
+
+.details-features {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 160px;
+  gap: 125px;
+}
+
+.features-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  max-width: 635px;
+}
+
+.features-p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+  opacity: 50%;
+  margin: 0;
+}
+
+.in-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.inside-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.box-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 21px;
+}
+
+.box-quantity {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: #D87D4A;
+}
+
+.box-item {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+  opacity: 50%;
+}
+
+.details-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 160px;
+  width: 100%;
+  gap: 30px;
+}
+
+.left-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.right-images {
+  width: 60%;
+}
+
+.details-image-third {
+  width: 100%;
+}
+
+
+.gallery-images {
+  border-radius: 7px;
+}
+
+.others-container {
+  padding-top: 120px;
+  text-align: center;
+  padding-bottom: 120px;
+  width: 100%;
+}
+
+.other-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding-top: 120px;
+  width: 100%;
+}
+
+.others-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 33.3%;
+}
+
+.other-image {
+  width: 100%;
+  border-radius: 7px;
+}
+
+
+
+@media(max-width: 1000px) {
+  .product-container {
+    gap: 69px;
+  }
+
+  .details-image {
+    width: 100%;
+  }
+
+  .details-features {
+    flex-direction: column;
+  }
+
+  .features-text {
+    max-width: 677px;
+  }
+
+  .in-box {
+    flex-direction: row;
+    gap: 170px;
+  }
+
+  .details-images {
+    gap: 18px;
+    flex-wrap: nowrap;
+  }
+
+
+
+  .other-section {
+    gap: 11px;
+    width: 100%;
+  }
+
+  .others-list {
+    width: 33.3%;
+  }
+
+  .other-image {
+    max-width: 97.9%;
+  }
+
+  .other-button {
+    padding: 0;
+    margin: 0;
+  }
+
+
+}
+
+@media(max-width: 500px) {
+  .product-container {
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  .details-images {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .left-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .right-images {
+    width: 100%;
+  }
+
+  .details-image-third {
+    width: 100%;
+  }
+
+  .product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .details-h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1.43px;
+
+  }
+
+  .in-box {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+
+  .others-container {
+    padding-top: 120px;
+    padding-bottom: 0;
+  }
+
+  .other-section {
+    flex-direction: column;
+    gap: 56px;
+    padding-top: 40px;
+  }
+
+  .others-list {
+    width: 100%;
+    gap: 32px;
+  }
+
+  .details-features-h3 {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.86px;
+  }
+
+  .other-image {
+    max-width: 100%;
+  }
+
+
+}

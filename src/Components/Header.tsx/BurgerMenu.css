@@ -1,0 +1,100 @@
+.drop-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px;
+  max-width: 100%;
+
+}
+
+.drop-menu a {
+  text-decoration: none;
+  color: #000000;
+  width: 33.3%;
+}
+
+.burger-modal {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  background: rgb(255, 255, 255);
+  padding: 20px 0;
+  opacity: 0;
+  animation: modalOpen 0.3s forwards;
+}
+
+.burger-modal-close {
+  animation: modalClose 0.3s forwards;
+}
+
+.burger-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+@keyframes modalOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes modalClose {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.burger-overlay-close {
+  animation: fadeOut 0.3s forwards;
+}
+
+@media (max-width: 500px) {
+  .drop-menu {
+    flex-direction: column;
+    gap: 68px;
+  }
+
+  .drop-menu a {
+    width: 100%;
+  }
+}

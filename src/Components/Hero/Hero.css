@@ -1,0 +1,130 @@
+.hero-section {
+  background-color: #191919;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 60px;
+  height: 632px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 28px;
+}
+
+.image-container {
+  width: 100%;
+  position: relative;
+}
+
+.image-container picture img {
+  width: 100%;
+}
+
+.hero-texts {
+  position: absolute;
+  top: 225px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 28px;
+}
+
+
+.overline-gray {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.12px;
+  letter-spacing: 10px;
+  color: #fff;
+  opacity: 49.64%;
+}
+
+.hero-p {
+  max-width: 349px;
+  opacity: 0.75;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFF;
+}
+
+@media (max-width: 1000px) {
+
+  .hero-container {
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .image-container {
+    overflow: hidden;
+    display: none;
+  }
+
+  .hero-p {
+    margin: 0;
+  }
+
+  .hero-texts {
+    background: url('../../assets/home/tablet/image-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 75%;
+    top: 80px;
+    padding-top: 140px;
+    padding-bottom: 150px;
+    width: 100%;
+    ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .hero-container {
+    justify-content: flex-start;
+  }
+
+  .hero-section {
+    max-height: 510px;
+  }
+
+  .image-container {
+    overflow: hidden;
+    display: none;
+  }
+
+  .hero-texts {
+    gap: 16px;
+    background: url('../../assets/home/mobile/image-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 2000%;
+    top: 80px;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    width: 340px;
+  }
+
+  .h1-hero-mobile {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1.29px;
+    padding-bottom: 8px;
+  }
+
+  .hero-p {
+    margin: 0;
+    max-width: 328px;
+    padding-bottom: 12px;
+  }
+}

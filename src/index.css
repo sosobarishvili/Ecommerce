@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --orange1: #D87D4A;
+  --orange2: #FBAF85;
+  --black1: #101010;
+  --black2: #000000;
+  --gray1: #F1F1F1;
+  --gray2: #FAFAFA;
+  --white: #FFFFFF;
+
+}
+
+h1 {
+  font-family: "Manrope", sans-serif;
+  font-Weight: 700;
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  margin: 0;
+  max-width: 396px;
+}
+
+h2 {
+  font-family: "Manrope", sans-serif;
+  font-Weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.43px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Manrope", sans-serif;
+  font-Weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.14px;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Manrope", sans-serif;
+  font-Weight: 700;
+  font-size: 28px;
+  line-height: 38.25px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+h5 {
+  font-family: "Manrope", sans-serif;
+  font-Weight: 700;
+  font-size: 24px;
+  line-height: 32.78px;
+  letter-spacing: 1.71px;
+  margin: 0;
+}
+
+h5 {
+  font-family: "Manrope", sans-serif;
+  font-Weight: 700;
+  font-size: 18px;
+  line-height: 24.59px;
+  letter-spacing: 1.29px;
+  margin: 0;
+}
+
+p.overline {
+  color: var(--orange1);
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.12px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  margin: 0;
+
+}
+
+p.sub-title {
+  color: var(--orange1);
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.93px;
+  margin: 0;
+}
+
+.button-1 {
+  width: 160px;
+  height: 48px;
+  background-color: var(--orange1);
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17.76px;
+  letter-spacing: 1px;
+  color: var(--white);
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.button-1:hover {
+  background-color: var(--orange2);
+}
+
+.button-2 {
+  width: 160px;
+  height: 48px;
+  background-color: transparent;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17.76px;
+  letter-spacing: 1px;
+  color: var(--black2);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button-2:hover {
+  background-color: var(--black2);
+  color: var(--white);
+}
+
+
+
+.container {
+  width: 91.8%;
+  margin: auto;
+  max-width: 1110px;
+}
+
+@media (max-width: 768px) {
+
+  h5 {
+    font-family: "Manrope", sans-serif;
+    font-Weight: 700;
+    font-size: 15px;
+    line-height: 20.49px;
+    letter-spacing: 1.07px;
+    margin: 0;
+  }
+}

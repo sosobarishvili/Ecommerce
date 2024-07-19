@@ -1,0 +1,22 @@
+.category-container {
+  background-color: #191919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-h2 {
+  padding: 98px 0;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+
+@media(max-width: 600px) {
+  .category-h2 {
+    padding: 40px 0;
+    font-size: 28px;
+    line-height: 38.25px;
+    letter-spacing: 2px;
+  }
+}
