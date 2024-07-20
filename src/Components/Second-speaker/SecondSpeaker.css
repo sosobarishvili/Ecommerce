@@ -13,7 +13,7 @@
   border-radius: 7px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .second-speaker {
     padding: 32px 0;
   }
@@ -22,11 +22,12 @@
     background: url('../../assets/home/tablet/image-speaker-zx7.jpg');
     padding-left: 62px;
     border-radius: 7px;
+    width: 100%;
   }
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .second-speaker {
     padding: 32px 0;
   }

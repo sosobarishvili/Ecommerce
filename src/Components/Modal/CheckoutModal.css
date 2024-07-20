@@ -26,20 +26,17 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 444px;
+  width: 540px;
   max-height: 90vh;
-  /* Set max height */
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   gap: 33px;
   padding: 48px;
   overflow-y: auto;
-  /* Make the modal scrollable */
   background-color: #fff;
-  /* Ensure background color */
   border-radius: 8px;
-  /* Add border-radius */
+
 }
 
 .checkoutIcon {
@@ -72,10 +69,18 @@
   flex-direction: column;
   padding: 24px 24px 19px 24px;
   justify-content: space-between;
-  width: 198px;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+  min-width: 242px;
 }
+
+.checkout-container-main .checkout-products-modal {
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+
+}
+
 
 .checkout-products-right {
   display: flex;
@@ -87,7 +92,7 @@
   background-color: #000;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
-  width: 132px;
+  min-width: 198px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -154,7 +159,6 @@
     gap: 23px;
     padding: 32px;
     overflow: auto;
-    /* Ensure scrollable content */
     top: 50%;
   }
 

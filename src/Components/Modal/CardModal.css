@@ -185,7 +185,7 @@
   background-color: var(--orange2);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .ReactModal__Content {
     right: 40px;
   }

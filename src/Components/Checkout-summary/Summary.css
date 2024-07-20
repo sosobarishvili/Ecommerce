@@ -114,7 +114,7 @@
   background-color: var(--orange2);
 }
 
-@media (max-width: 875px) {
+@media (max-width: 1000px) {
   .summary-container {
     width: 100%;
     background-color: #FFF;

@@ -119,7 +119,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 
   .speaker-section-mobile {
     display: none;
@@ -134,7 +134,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .speaker-section-tablet {
     display: none;
   }

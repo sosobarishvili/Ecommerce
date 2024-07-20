@@ -260,7 +260,7 @@
   border: 1px solid #CD2C2C;
 }
 
-@media (max-width: 875px) {
+@media (max-width: 1000px) {
   .checkout-main {
     flex-direction: column;
     width: 100%;

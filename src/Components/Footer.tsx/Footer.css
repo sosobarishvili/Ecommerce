@@ -126,7 +126,7 @@
   justify-content: space-between;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1000px) {
   .footer-container {
     display: none;
   }
@@ -139,7 +139,7 @@
 }
 
 
-@media(max-width: 600px) {
+@media(max-width: 500px) {
   .container-tablet {
     display: flex;
     justify-content: center;
@@ -159,8 +159,9 @@
   }
 
   .footer-p-tablet {
-    max-width: 324px;
+    padding: 0 10px;
     text-align: center;
+    margin: 0;
   }
 
   .footer-copyright-tablet {
@@ -173,5 +174,7 @@
 
   .copyright {
     text-align: center;
+    margin: 0;
+    padding: 0;
   }
 }

@@ -49,7 +49,7 @@ const CheckoutModal = ({ grandTotal, isOpen, onRequestClose }: Props) => {
           <div className="confirmation-info">
             {CheckoutItems.slice(0, 1).map((item) => (
               <div className="checkout-container-main" key={item.id}>
-                <div className="checkout-products">
+                <div className="checkout-products checkout-products-modal">
                   <div className="checkout-products-right">
                     <img className='checkout-product-image' src={item.image} alt="image" />
                     <div className="checkout-name-price">
@@ -68,7 +68,7 @@ const CheckoutModal = ({ grandTotal, isOpen, onRequestClose }: Props) => {
             )}
             {showAllItems && CheckoutItems.slice(1).map((item) => (
               <div className="checkout-container-main" key={item.id}>
-                <div className="checkout-products">
+                <div className="checkout-products checkout-products-modal">
                   <div className="checkout-products-right confirmation-products">
                     <img className='checkout-product-image' src={item.image} alt="image" />
                     <div className="checkout-name-price">

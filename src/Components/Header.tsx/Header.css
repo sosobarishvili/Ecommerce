@@ -69,6 +69,7 @@
 }
 
 @media (max-width: 1000px) {
+
   .burger-button {
     display: block;
     padding: 10px 0;
@@ -79,8 +80,13 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
+  .header-flex {
+    justify-content: space-between;
+  }
+
   .menu-logo {
-    gap: 76px;
+    width: 65%;
+    justify-content: space-between;
   }
 }
