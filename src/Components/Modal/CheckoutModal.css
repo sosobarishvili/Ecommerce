@@ -162,6 +162,10 @@
     top: 50%;
   }
 
+  .empty-cart {
+    text-align: center;
+  }
+
   .confirmation-h3 {
     font-size: 24px;
     line-height: 28px;
