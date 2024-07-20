@@ -91,10 +91,15 @@
 @media (max-width: 500px) {
   .drop-menu {
     flex-direction: column;
-    gap: 68px;
+    gap: 40px;
+    padding: 40px 24px 20px 24px;
   }
 
   .drop-menu a {
     width: 100%;
+  }
+
+  .drop-menu a img {
+    max-width: 103px;
   }
 }

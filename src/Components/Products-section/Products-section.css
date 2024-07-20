@@ -82,5 +82,7 @@
 
   .product-section-card {
     width: 100%;
+    padding-top: 78px;
+    gap: 17px;
   }
 }
