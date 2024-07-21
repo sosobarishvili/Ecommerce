@@ -37,7 +37,7 @@ const ProductList = ({ category }: ListProps) => {
             <picture>
               <source media="(max-width: 500px)" srcSet={product.categoryImage.mobile} />
               <source media="(max-width: 1000px)" srcSet={product.categoryImage.tablet} />
-              <img className="list-image" src={product.image.desktop} alt={product.name} />
+              <img className="list-image" src={product.categoryImage.desktop} alt={product.name} />
             </picture>
             <div>
               <div className="list-info">
