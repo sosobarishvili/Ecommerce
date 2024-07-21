@@ -7,6 +7,14 @@
   padding-top: 160px;
 }
 
+.loader-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .headphones-list.reversed {
   flex-direction: row-reverse;
 }

@@ -19,7 +19,7 @@ const ProductList = ({ category }: ListProps) => {
   }, [dispatch]);
 
   if (loading) {
-    return <Loader />;
+    return <div className="loader-container"> <Loader /> </div>;
   }
 
   if (error) {
