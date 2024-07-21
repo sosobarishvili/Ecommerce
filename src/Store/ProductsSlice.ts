@@ -18,7 +18,6 @@ const initialState: InitialState = {
 export const fetchProducts = async () => {
 
   return await axios.get('https://sosobarishvili.github.io/Ecommerce/db.json').then(({ data }) => {
-    console.log(data)
     return data
   })
 
