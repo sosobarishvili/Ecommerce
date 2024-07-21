@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { Root } from "../Types/Types";
+import axios from "axios";
 
 type InitialState = {
   data: Root[],
@@ -15,16 +16,16 @@ const initialState: InitialState = {
 }
 
 export const fetchProducts = async () => {
-  const response = await fetch('http://localhost:3000/products');
-  if (!response.ok) {
-    throw new Error('Failed to fetch products');
-  }
-  return response.json();
+
+  return await axios.get('https://sosobarishvili.github.io/Ecommerce/db.json').then(({ data }) => {
+    return data
+  })
+
 };
 
 
 export const fetchProductsThunk = createAsyncThunk('products/fetchProducts', async () => {
-  const products = await fetchProducts();
+  const { products } = await fetchProducts();
   return products;
 });
 
