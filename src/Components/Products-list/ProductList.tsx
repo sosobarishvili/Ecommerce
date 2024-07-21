@@ -4,6 +4,7 @@ import './ProductList.css';
 import { useEffect } from 'react';
 import { fetchProductsThunk } from '../../Store/ProductsSlice';
 import { Link } from 'react-router-dom';
+import Loader from '../Loader/Loader';
 
 export type ListProps = {
   category: string;
@@ -18,7 +19,7 @@ const ProductList = ({ category }: ListProps) => {
   }, [dispatch]);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <Loader />;
   }
 
   if (error) {

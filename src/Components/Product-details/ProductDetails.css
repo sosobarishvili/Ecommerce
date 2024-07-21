@@ -188,8 +188,11 @@
 
 
 
+
+
 @media(max-width: 1000px) {
   .product-container {
+    margin-top: 24px;
     gap: 69px;
   }
 

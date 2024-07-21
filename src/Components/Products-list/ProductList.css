@@ -49,7 +49,7 @@
     text-align: center;
     gap: 52px;
     padding-top: 120px;
-    padding-bottom: 0;
+    padding-bottom: 120px;
   }
 
   .list-image {
@@ -78,9 +78,9 @@
 }
 
 @media (max-width: 500px) {
+
   .headphones-list {
     gap: 20px;
-    padding-bottom: 20px;
   }
 
   .list-image {

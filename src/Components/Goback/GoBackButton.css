@@ -10,3 +10,15 @@
   border: none;
   cursor: pointer;
 }
+
+@media (max-width: 1000px) {
+  .goback {
+    margin-top: 33px;
+  }
+}
+
+@media (max-width: 500px) {
+  .goback {
+    margin-top: 16px;
+  }
+}

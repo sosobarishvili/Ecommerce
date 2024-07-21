@@ -6,6 +6,7 @@ import { fetchProductsThunk } from '../Store/ProductsSlice';
 import ProductDetails from '../Components/Product-details/ProductDetails';
 import ProductsSection from '../Components/Products-section/Products-section';
 import Gear from '../Components/Gear/Gear';
+import Loader from '../Components/Loader/Loader';
 
 
 const ProductPage: React.FC = () => {
@@ -18,7 +19,7 @@ const ProductPage: React.FC = () => {
   }, [dispatch]);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <Loader />;
   }
 
   if (error) {
