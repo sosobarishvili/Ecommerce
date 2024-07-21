@@ -62,7 +62,7 @@ const CardModal = () => {
                   <div key={item.id} className="cart-container">
                     <div className="cart-item">
                       <div className="cart-description">
-                        <img className='cart-image' src={`/${item.image}`} alt="image" />
+                        <img className='cart-image' src={`${item.image}`} alt="image" />
                         <div className="cart-name-price">
                           <span className='cart-product-name'>{removeLastWord(item.name)}</span>
                           <span className='cart-product-price'>${formatNumber(item.price)}</span>

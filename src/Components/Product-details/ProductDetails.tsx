@@ -39,9 +39,9 @@ const ProductDetails: React.FC<ProductDetailProps> = ({ product }) => {
       <GoBackButton />
       <div className='product-container'>
         <picture>
-          <source media="(max-width: 500px)" srcSet={`/${product.image.mobile}`} />
-          <source media="(max-width: 1000px)" srcSet={`/${product.image.tablet}`} />
-          <img className="details-image" src={`/${product.image.desktop}`} alt={product.name} />
+          <source media="(max-width: 500px)" srcSet={`${product.image.mobile}`} />
+          <source media="(max-width: 1000px)" srcSet={`${product.image.tablet}`} />
+          <img className="details-image" src={`${product.image.desktop}`} alt={product.name} />
         </picture>
         <div className="product-details">
           {product.new && <p className="overline details-overline">new product</p>}
@@ -85,21 +85,21 @@ const ProductDetails: React.FC<ProductDetailProps> = ({ product }) => {
       <div className="details-images">
         <div className="left-images">
           <picture>
-            <source media="(max-width: 500px)" srcSet={`/${product.gallery.first.mobile}`} />
-            <source media="(max-width: 1000px)" srcSet={`/${product.gallery.first.tablet}`} />
-            <img className="details-image" src={`/${product.gallery.first.desktop}`} alt={product.name} />
+            <source media="(max-width: 500px)" srcSet={`${product.gallery.first.mobile}`} />
+            <source media="(max-width: 1000px)" srcSet={`${product.gallery.first.tablet}`} />
+            <img className="details-image" src={`${product.gallery.first.desktop}`} alt={product.name} />
           </picture>
           <picture>
-            <source media="(max-width: 500px)" srcSet={`/${product.gallery.second.mobile}`} />
-            <source media="(max-width: 1000px)" srcSet={`/${product.gallery.second.tablet}`} />
-            <img className="details-image" src={`/${product.gallery.second.desktop}`} alt={product.name} />
+            <source media="(max-width: 500px)" srcSet={`${product.gallery.second.mobile}`} />
+            <source media="(max-width: 1000px)" srcSet={`${product.gallery.second.tablet}`} />
+            <img className="details-image" src={`${product.gallery.second.desktop}`} alt={product.name} />
           </picture>
         </div>
         <div className="right-images">
           <picture>
-            <source media="(max-width: 500px)" srcSet={`/${product.gallery.third.mobile}`} />
-            <source media="(max-width: 1000px)" srcSet={`/${product.gallery.third.tablet}`} />
-            <img className="details-image details-image-third" src={`/${product.gallery.third.desktop}`} alt={product.name} />
+            <source media="(max-width: 500px)" srcSet={`${product.gallery.third.mobile}`} />
+            <source media="(max-width: 1000px)" srcSet={`${product.gallery.third.tablet}`} />
+            <img className="details-image details-image-third" src={`${product.gallery.third.desktop}`} alt={product.name} />
           </picture>
         </div>
       </div>
@@ -109,12 +109,12 @@ const ProductDetails: React.FC<ProductDetailProps> = ({ product }) => {
           {product.others.map((item, index) => (
             <li className="others-list" key={index}>
               <picture>
-                <source media="(max-width: 500px)" srcSet={`/${item.image.mobile}`} />
-                <source media="(max-width: 1000px)" srcSet={`/${item.image.tablet}`} />
-                <img className="other-image" src={`/${item.image.desktop}`} alt={product.name} />
+                <source media="(max-width: 500px)" srcSet={`${item.image.mobile}`} />
+                <source media="(max-width: 1000px)" srcSet={`${item.image.tablet}`} />
+                <img className="other-image" src={`${item.image.desktop}`} alt={product.name} />
               </picture>
               <h5>{item.name}</h5>
-              <Link to={`/product/${item.slug}`}>
+              <Link to={`/product${item.slug}`}>
                 <button className="button-1">see product</button>
               </Link>
             </li>
