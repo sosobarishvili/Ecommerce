@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Modal from 'react-modal';
 import { useSelector, useDispatch } from 'react-redux';
-import { clearCart, increaseQuantity, decreaseQuantity, CartItem } from '../../Store/CartSlice';
+import { clearCart, increaseQuantity, decreaseQuantity, CartItem, setCartItems } from '../../Store/CartSlice';
 import './CardModal.css';
 import cartIcon from '../../assets/shared/desktop/icon-cart.svg';
 import { RootState } from '../../Store/Store';
@@ -11,6 +11,17 @@ const CardModal = () => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const cartItems = useSelector((state: RootState) => state.cart.items);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    const savedCartItems = localStorage.getItem('cartItems');
+    if (savedCartItems) {
+      dispatch(setCartItems(JSON.parse(savedCartItems)));
+    }
+  }, [dispatch]);
+
+  useEffect(() => {
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  }, [cartItems]);
 
   const openModal = () => {
     document.body.classList.add('no-scroll');
@@ -29,9 +40,8 @@ const CardModal = () => {
   };
 
   const formatNumber = (number: number) => {
-    return number.toLocaleString()
-  }
-
+    return number.toLocaleString();
+  };
 
   const totalPrice = cartItems.reduce((total, item) => total + item.totalPrice, 0);
 
